@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Form</title>
+</head>
+<style>
+    body{
+        background-color: cadetblue;
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaoMlX4N5agvcUb6s0MNbNGGC0NjtWH6G5Hw&s);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h1{
+        color: red;
+    }
+    div{
+         
+        width: 45%;
+        font-size: xx-large;
+        padding-left: 30px;;
+        color: white;
+        box-shadow: black 1px 1px 1px;
+         transform: scale3d(1,1,2);
+         transition: all 1s ease-in-out;
+        
+
+    }
+    div:hover{
+        transform: scale3d(1.05,1.05,2);
+    }
+    input{
+        width:300px;
+        height: 50px;
+        background-color: black;
+        box-shadow: rgb(0, 0, 0) 10px 10px 10px ;
+    }
+    button{
+        height: 40px;
+        background-color: red;
+        color: whitesmoke;
+        border: 3px solid white;
+        border-radius: 20px;
+
+    }
+    ::placeholder{
+        font-size: larger;
+        padding-left: 40px;
+        color: white;
+    }
+     
+    
+    
+</style>
+<body>
+    
+    <div>
+        <h1> N E T F L I X </h1>
+     
+        <form action="">
+            <label for="na">Name</label>
+            <br>
+            <br>
+             <input type="text"  id="na" placeholder="Enter your name"> 
+             <br>
+             <br>
+            <label for="number">Number</label>
+            <br>
+            <br>
+              <input type="number" id="number" placeholder="Enter your phone number"> 
+              <br>
+              <br>
+             <label for="email">Email</label>
+             <br>
+             <br>
+             <input type="email" id="email" placeholder="Enter you email">
+             <br>
+             <br>
+             <button>Sign in</button> 
+             <br><br>
+            
+            
+        </form>
+        
+         
+    </div>
+   
+</body>
+</html>
