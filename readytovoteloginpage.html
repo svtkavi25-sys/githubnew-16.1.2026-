@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> R2V Login</title>
+</head>
+<body style="background-image:url('vote.png');background-repeat:no-repeat;background-position: center;background-size: cover;background-attachment: fixed;min-height:100vh;margin:0;">
+    <center>
+        <h1 style="color: rgb(0, 0, 255);">Welcome to the login page</h1>
+    <td style="display: flex; flex-direction: column; max-width: 300px; gap: 10px;">
+    
+    <!-- Name -->
+    
+    <tr><label style="font-size: x-large;width: 150px;">Name:</label></tr>
+    <tr><input type="text" placeholder="Your Name" style="padding: 8px;"></tr>
+    <br>
+    <br>
+    
+
+    <!-- Age -->
+     
+    <tr><label style="font-size: x-large;width: 15px;">Age:</label></tr>
+    <tr><input type="number" placeholder="Years" style="padding: 8px;"></tr>
+    <br>
+    <br>
+    
+
+    <!-- Date of Birth -->
+    
+    <tr><label style="font-size: x-large;width: 150px;">Date of Birth:</label></tr>
+    <tr><input type="date" style="padding: 8px;"></tr>
+    <br><br>
+    
+
+    <!-- Gender (Radio) -->
+    
+    <tr><label style="font-size: x-large;width: 150px;">Gender:</label></tr>
+    
+    <tr> <input style="font-size: x-large;width: 150px;" type="radio" name="g" value="m"> Male</input></tr>
+    <br>
+    <tr><input style="font-size: x-large;width: 150px;" type="radio" name="g" value="f"> Female</input></tr>
+
+
+    <!-- Submit -->
+    <br>
+    <form id="loginForm"></form>
+    <td><button type="submit" style=" font-size: 30px; background: #000; color: #fff; border: none; cursor: pointer;">Submit</button></td>
+</td>
+
+    </center>
+    <div id="messageArea" style="display: none; margin-top: 20px; padding: 20px; background-color: #e8f5e9; border: 1px solid #c8e6c9; border-radius: 5px; text-align: center; max-width: 400px; margin: 20px auto;">
+        <p style="color: #388e3c; font-size: large;">Thank you for logging in!</p>
+        <p>Go to the next page: <a href="next-page.html">Continue</a></p>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script>
+        const form = document.getElementById('loginForm');
+        const messageArea = document.getElementById('messageArea');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            form.style.display = 'none';
+            messageArea.style.display = 'block';
+        });
+    </script>
+
+
+</body>
+</html>
